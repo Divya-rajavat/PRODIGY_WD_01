@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li a {
+    color: #fff;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+/* Main container to allow image background */
+.main-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Home Section */
+.home-section {
+    height: 100vh;
+    background: url('espresso.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.home-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.home-text-overlay h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.home-text-overlay p {
+    font-size: 1rem;
+    margin: 10px 0 0;
+}
+
+/* About */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: rgb(248, 212, 168);
+}
+
+.about-box {
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 2rem;
+}
+
+.about-box h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-box p {
+    font-size: 1rem;
+    color: #666;
+    text-align: justify;
+}
+
+/* Services */
+.services-section {
+    padding: 2rem;
+    background-color: rgb(248, 212, 168);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.card-title {
+    margin: 1rem 0 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Contact */
+.contact-section {
+    padding: 2rem;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.contact-content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.contact-info {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 60px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        margin: 0.5rem 0;
+    }
+
+    .home-text-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-text-overlay p {
+        font-size: 0.9rem;
+    }
+
+    .about-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-box p {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    ul li a {
+        font-size: 0.9rem;
+    }
+
+    .home-text-overlay h1 {
+        font-size: 1.2rem;
+    }
+
+    .home-text-overlay p {
+        font-size: 0.8rem;
+    }
+
+    .about-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-box p {
+        font-size: 0.8rem;
+    }
+
+    .contact-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-content p,
+    .contact-info {
+        font-size: 0.9rem;
+    }
+}
